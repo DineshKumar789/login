@@ -4,8 +4,8 @@ include 'connector.php';
 if(isset($_POST['register'])){
     $username =$_POST['username'];
     $email =$_POST['email'];
-    $password =md5($_POST['password']);
-    $confirmpassword =md5($_POST['confirmpassword']);
+    $password =$_POST['password'];
+    $confirmpassword =$_POST['confirmpassword'];
 
     if($password==$confirmpassword){
         $sql="SELECT * FROM `logindata` WHERE `email`='$email'";

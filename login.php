@@ -3,7 +3,7 @@ include("connector.php");
 session_start();
 if(isset($_POST['login'])){
     $email=$_POST['email'];
-    $password=md5($_POST['password']);
+    $password=$_POST['password'];
 
     $sql="SELECT * FROM `logindata` WHERE `email`='$email' AND `password`='$password'";
     $result=mysqli_query($connector,$sql);

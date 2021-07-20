@@ -41,7 +41,8 @@ if(isset($_POST['register'])){
         padding:0%;
     }
         body{
-           
+            align-items: center;
+	        justify-content: center;
             position: fixed;
             background-image: url(im2.jpg);
             background-attachment: fixed;

@@ -60,6 +60,7 @@ if(isset($_POST['register'])){
             position: relative;
             border-radius: 20px;
             text-align:center;
+            box-shadow: 7px 7px 2px 2px rgba(0, 0, 0, 0.3);
     
         }
         .reg h1{
@@ -99,23 +100,27 @@ if(isset($_POST['register'])){
                 font-size: 20px;
                
             }
-          
     </style>
     <body>
        <section>
            <form class="reg" method="post" action="">
                <h1>REGISTRATION FORM</h1>
                <div class="lab">
-             
+             <div>
                <input class="data" type="text"  placeholder="USERNAME" name="username"  ><br>
-              
+             </div> 
+             <div>      
                <input class="data" type="email"  placeholder="EMAIL ID" name="email"><br>
-              
+             </div> 
+             <div>       
                <input class="data" type="password"  placeholder="PASSWORD" name="password"><br>
-              
+             </div>
+             <div>       
                <input class="data" type="password"  placeholder="CONFIRM PASSWORD" name="confirmpassword"><br>
-               <button type="sumbit" class="but"  name="register">REGISTER</button>
-               
+             </div> 
+             <div>       
+                 <button type="sumbit" class="but"  name="register">REGISTER</button>
+             </div>   
                    <p >Already have an account ?<a href="login.php" >login</a></p>
             </div>
            </form>
